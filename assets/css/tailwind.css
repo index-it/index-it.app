@@ -7,6 +7,9 @@
       @apply h-full;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
    }
+   a {
+      @apply hover:opacity-90 hover:text-teal-700 duration-200
+   }
 }
 
 @layer utilities {
