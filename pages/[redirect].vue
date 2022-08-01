@@ -20,10 +20,8 @@ useHead({
 })
 
 onMounted(() => {
-  console.log("hello")
   // Guarantees the DOM tree to be fully built
   nextTick(() => {
-    console.log("hei")
     if (redirect) {
       setTimeout(() => {
         try {
