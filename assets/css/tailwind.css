@@ -4,11 +4,11 @@
 
 @layer base {
    html, body, #__nuxt {
-      @apply h-full;
+      @apply h-full dark:text-gray-100 dark:bg-neutral-900;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
    }
    a {
-      @apply hover:opacity-90 hover:text-teal-700 duration-200
+      @apply hover:opacity-90 hover:text-teal-700 dark:hover:text-teal-100 duration-200
    }
 }
 
