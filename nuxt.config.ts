@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
-
 const title = "Index - The essential app for any kind of list"
 const description = "Index is the perfect app for any kind of list. It\'s minimal and yet complete, made to simplify your life."
 
@@ -8,7 +6,6 @@ export default defineNuxtConfig({
       head: {
          charset: 'utf-8',
          viewport: 'width=device-width, initial-scale=1',
-         robots: 'index, follow',
          title,
          meta: [
             {name: 'title', content: title},
