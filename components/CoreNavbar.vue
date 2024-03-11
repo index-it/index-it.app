@@ -2,10 +2,10 @@
   <!-- full navbar container -->
   <div
     ref="navbarContainer"
-    class="transition-[background box-shadow] top-0 z-50 min-w-full duration-100 absolute"
+    class="transition-[background box-shadow] top-0 z-50 min-w-full duration-100 fixed"
   >
     <!-- navbar content container -->
-    <header class="container mx-auto flex h-16 gap-4 px-4">
+    <header class="container mx-auto flex h-16 gap-8 px-4">
       <!-- astro logo -->
       <div class="flex items-center">
         <NuxtLink
@@ -23,18 +23,30 @@
       </div>
 
       <!-- desktop: navbar items -->
-      <div class="hidden items-center gap-8 whitespace-nowrap lg:flex text-lg">
-        <NuxtLink to="/playstore">
+      <div class="hidden items-center gap-12 whitespace-nowrap lg:flex text-xl">
+        <NuxtLink
+          to="/playstore"
+          class="hover:underline hover:opacity-80"
+        >
           Download
         </NuxtLink>
-        <NuxtLink to="/community">
+        <NuxtLink
+          to="/community"
+          class="hover:underline hover:opacity-80"
+        >
           Community
         </NuxtLink>
-        <NuxtLink to="/roadmap">
+        <NuxtLink
+          to="/roadmap"
+          class="hover:underline hover:opacity-80"
+        >
           Roadmap
         </NuxtLink>
-        <NuxtLink to="/patreon">
-          About
+        <NuxtLink
+          to="/donate"
+          class="hover:underline hover:opacity-80"
+        >
+          Donate
         </NuxtLink>
       </div>
 
@@ -57,7 +69,7 @@
                 ? 'fluent:dismiss-20-filled'
                 : 'fluent:line-horizontal-3-20-filled'
             "
-            class="z-10 cursor-pointer"
+            class="z-10 cursor-pointer size-6"
             @click="toggleMobileNavbarOpenState"
           />
 
@@ -76,8 +88,8 @@
               <NuxtLink to="/roadmap">
                 Roadmap
               </NuxtLink>
-              <NuxtLink to="/patreon">
-                About
+              <NuxtLink to="/donate">
+                Donate
               </NuxtLink>
             </div>
           </div>
@@ -90,15 +102,19 @@
 <script lang="ts" setup>
 import { useWindowScroll } from "@vueuse/core";
 
+const route = useRoute();
+
 // Navbar border toggling
 const navbarContainer = ref<HTMLElement | null>(null);
 const { y } = useWindowScroll();
 const scrolledClasses = [
-    "bg-slate-100",
-    "md:bg-opacity-50",
+    "bg-white",
+    "md:bg-opacity-75",
     "md:backdrop-saturate-150",
     "shadow-[inset_0_-1px_0_0_hsla(0,0%,100%,0.1)]",
     "md:backdrop-blur-sm",
+    "border-[1px]",
+    "border-neutral-300"
 ];
 
 watch(y, () => {
@@ -115,4 +131,14 @@ const navbarOpened = ref(false);
 function toggleMobileNavbarOpenState() {
     navbarOpened.value = !navbarOpened.value;
 }
+
+watch(() => route.fullPath, () => {
+  navbarOpened.value = false;
+});
 </script>
+
+<style scoped>
+/* a:hover {
+  font-weight: bold;
+} */
+</style>

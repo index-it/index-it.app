@@ -28,3 +28,21 @@
         @apply h-full;
     }
 }
+
+body {
+    @apply accent-primary;
+    @apply selection:bg-primary selection:text-white;
+}
+
+a {
+    @apply underline-offset-4 transition-all;
+}
+
+.bg {
+	background: radial-gradient(circle, #fff 0, #ceeabe 34.56%, #eafce2 68.64%, #c1d9b0 100%);
+	filter: blur(60px);
+}
+
+.button {
+    @apply bg-neutral-800 hover:bg-black text-white px-8 py-3 rounded-lg transition-all;
+}

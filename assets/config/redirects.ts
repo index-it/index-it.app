@@ -10,9 +10,19 @@ export const redirects: Array<Redirect> = [
         url: 'https://community.index-it.app'
     },
     {
+        id: 'support',
+        name: 'support',
+        url: 'https://community.index-it.app'
+    },
+    {
         id: 'roadmap',
         name: 'Roadmap',
         url: 'https://roadmap.index-it.app'
+    },
+    {
+        id: 'donate',
+        name: 'Patreon',
+        url: 'https://patreon.com/giuliopime'
     },
     {
         id: 'patreon',

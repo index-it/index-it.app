@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-full flex grow flex-col items-center justify-center text-center"
+    class="min-h-screen flex grow flex-col items-center justify-center text-center"
   >
     <span
       class="text-3xl leading-none md:text-6xl font-bold animate-pulse"

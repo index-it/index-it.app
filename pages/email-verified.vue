@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full flex grow flex-col items-center justify-center text-center">
+  <div class="flex grow flex-col items-center justify-center text-center min-h-screen">
     <span class="text-3xl leading-none md:text-6xl font-bold animate-pulse mb-4">Email verified!</span>
     <span class="text-md leading-none md:text-xl font-bold animate-pulse">You can now go back to the app</span>
   </div>
@@ -7,9 +7,9 @@
 
 <script setup>
 useHead({
-  title: 'Email successful verification page',
+  title: 'Email verification successful',
   meta: [
-    { name: 'title', content: 'Email successful verification page' }
+    { name: 'title', content: 'Email verification successful' }
   ],
 })
 </script>
