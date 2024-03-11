@@ -2,7 +2,7 @@
   <!-- full navbar container -->
   <div
     ref="navbarContainer"
-    class="transition-[background box-shadow] sticky top-0 z-50 min-w-full duration-100"
+    class="transition-[background box-shadow] top-0 z-50 min-w-full duration-100 absolute"
   >
     <!-- navbar content container -->
     <header class="container mx-auto flex h-16 gap-4 px-4">
@@ -16,22 +16,25 @@
           <NuxtImg
             src="/logo.png"
             class="mr-4 h-10 w-10 select-none"
-            alt="Astro-s logo"
+            alt="Index logo"
             draggable="false"
           />
         </NuxtLink>
       </div>
 
       <!-- desktop: navbar items -->
-      <div class="hidden items-center gap-8 whitespace-nowrap lg:flex">
-        <NuxtLink to="/invite">
-          Invite
+      <div class="hidden items-center gap-8 whitespace-nowrap lg:flex text-lg">
+        <NuxtLink to="/playstore">
+          Download
         </NuxtLink>
-        <NuxtLink to="/premium">
-          Premium
+        <NuxtLink to="/community">
+          Community
         </NuxtLink>
-        <NuxtLink to="/support">
-          Support
+        <NuxtLink to="/roadmap">
+          Roadmap
+        </NuxtLink>
+        <NuxtLink to="/patreon">
+          About
         </NuxtLink>
       </div>
 
@@ -46,7 +49,7 @@
           <!-- background shadow -->
           <div
             v-if="navbarOpened"
-            class="bg-gray-darker fixed left-0 top-0 h-screen w-screen opacity-50"
+            class="fixed left-0 top-0 h-screen w-screen opacity-50"
           />
           <Icon
             :name="
@@ -61,17 +64,20 @@
           <!-- mobile navbar drawer -->
           <div
             v-if="navbarOpened"
-            class="fixed left-0 top-0 flex h-screen w-3/4 flex-col justify-between bg-black"
+            class="fixed left-0 top-0 flex h-screen w-full flex-col justify-center items-center backdrop-blur-2xl bg-opacity-45"
           >
-            <div class="flex flex-col px-4">
-              <NuxtLink to="/invite">
-                Invite
+            <div class="flex flex-col px-4 gap-8 text-center text-xl font-semibold">
+              <NuxtLink to="/download">
+                Download
               </NuxtLink>
-              <NuxtLink to="/premium">
-                Premium
+              <NuxtLink to="/community">
+                Community
               </NuxtLink>
-              <NuxtLink to="/support">
-                Support
+              <NuxtLink to="/roadmap">
+                Roadmap
+              </NuxtLink>
+              <NuxtLink to="/patreon">
+                About
               </NuxtLink>
             </div>
           </div>
@@ -88,7 +94,7 @@ import { useWindowScroll } from "@vueuse/core";
 const navbarContainer = ref<HTMLElement | null>(null);
 const { y } = useWindowScroll();
 const scrolledClasses = [
-    "bg-black",
+    "bg-slate-100",
     "md:bg-opacity-50",
     "md:backdrop-saturate-150",
     "shadow-[inset_0_-1px_0_0_hsla(0,0%,100%,0.1)]",

@@ -1,5 +1,25 @@
 export const redirects: Array<Redirect> = [
     {
+        id: 'playstore',
+        name: 'PlayStore',
+        url: 'https://playstore.com'
+    },
+    {
+        id: 'community',
+        name: 'Community',
+        url: 'https://community.index-it.app'
+    },
+    {
+        id: 'roadmap',
+        name: 'Roadmap',
+        url: 'https://roadmap.index-it.app'
+    },
+    {
+        id: 'patreon',
+        name: 'Patreon',
+        url: 'https://patreon.com/giuliopime'
+    },
+    {
         id: 'github',
         name: 'GitHub',
         url: 'https://github.com/index-it'

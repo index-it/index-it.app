@@ -2,7 +2,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <NuxtLoadingIndicator />
-  <div class="min-h-screen">
+  <div class="h-full">
     <CoreNavbar />
     <slot />
   </div>
