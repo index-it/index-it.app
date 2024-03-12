@@ -6,9 +6,10 @@
         class="flex flex-grow"
       />
 
-      <span class="text-[4.8rem] leading-none md:text-7xl mb-10 font-bold text-center px-8">
-        Note down what matters to you
+      <span class="text-[4.8rem] leading-none md:text-8xl mb-10 font-bold text-center px-8 md:px-16">
+        Note down what matters to you.
       </span>
+      <span class="italic text-xl md:text-2xl">Get Index, the app for any kind of list.</span>
       <NuxtLink
         to="/playstore"
         role="button"
@@ -66,7 +67,7 @@
 
     <div
       id="donate-box"
-      class="flex flex-col bg-neutral-50 border-neutral-950 border-[1px] gap-6 rounded-2xl mx-8 mt-32 py-8 px-16 items-center"
+      class="flex flex-col bg-neutral-50 border-neutral-950 border-[1px] gap-6 rounded-2xl mx-8 mt-32 py-8 px-8 md:px-16 items-center"
       @mousemove="onMouseMove"
     >
       <span class="text-center font-bold text-3xl z-50">Support the development</span>

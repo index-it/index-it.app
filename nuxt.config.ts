@@ -51,7 +51,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
       public: {
-          apiBase: "",
+          apiBase: "https://api-beta.index-it.app",
       },
   },
 
