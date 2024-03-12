@@ -69,7 +69,7 @@
                 ? 'fluent:dismiss-20-filled'
                 : 'fluent:line-horizontal-3-20-filled'
             "
-            class="z-10 cursor-pointer size-6"
+            class="z-10 cursor-pointer size-6 select-none"
             @click="toggleMobileNavbarOpenState"
           />
 
@@ -113,7 +113,7 @@ const scrolledClasses = [
     "md:backdrop-saturate-150",
     "shadow-[inset_0_-1px_0_0_hsla(0,0%,100%,0.1)]",
     "md:backdrop-blur-sm",
-    "border-[1px]",
+    "border-b-[1px]",
     "border-neutral-300"
 ];
 
@@ -136,9 +136,3 @@ watch(() => route.fullPath, () => {
   navbarOpened.value = false;
 });
 </script>
-
-<style scoped>
-/* a:hover {
-  font-weight: bold;
-} */
-</style>

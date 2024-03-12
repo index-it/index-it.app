@@ -70,8 +70,8 @@
       class="flex flex-col bg-neutral-50 border-neutral-950 border-[1px] gap-6 rounded-2xl mx-8 mt-32 py-8 px-8 md:px-16 items-center"
       @mousemove="onMouseMove"
     >
-      <span class="text-center font-bold text-3xl z-50">Support the development</span>
-      <span class="text-center max-w-screen-lg text-lg z-50">
+      <span class="text-center font-bold text-3xl z-30">Support the development</span>
+      <span class="text-center max-w-screen-lg text-lg z-30">
         My goal is to build a first class app for noting down things that matter to people.
         <br>
         I'm building native apps for all platforms to provide users with the experience that
@@ -84,7 +84,7 @@
       <NuxtLink
         to="/patreon"
         role="button"
-        class="button w-fit text-xl z-50"
+        class="button w-fit text-xl z-30"
       >
         Donate
       </NuxtLink>
