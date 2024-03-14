@@ -5,7 +5,7 @@
     class="transition-[background box-shadow] top-0 z-50 min-w-full duration-100 fixed"
   >
     <!-- navbar content container -->
-    <header class="container mx-auto flex h-16 gap-8 px-4">
+    <header class="container mx-auto flex h-16 gap-12 px-4">
       <!-- astro logo -->
       <div class="flex items-center">
         <NuxtLink
@@ -14,8 +14,8 @@
           class="flex items-center"
         >
           <NuxtImg
-            src="/logo.png"
-            class="mr-4 h-10 w-10 select-none"
+            src="/logo-full-no-bg.png"
+            class="h-6 w-auto select-none"
             alt="Index logo"
             draggable="false"
           />
