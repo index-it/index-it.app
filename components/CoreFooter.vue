@@ -54,31 +54,6 @@
           </NuxtLink>
         </div>
       </div>
-      <div class="flex flex-col gap-y-3">
-        <p class="text-xl font-semibold">
-          Social
-        </p>
-        <div class="flex flex-col gap-y-2">
-          <NuxtLink
-            to="/youtube"
-            class="link"
-          >
-            YouTube
-          </NuxtLink>
-          <NuxtLink
-            to="/twitter"
-            class="link"
-          >
-            Twitter
-          </NuxtLink>
-          <NuxtLink
-            href="/instagram"
-            class="link"
-          >
-            Instagram
-          </NuxtLink>
-        </div>
-      </div>
     </div>
   </div>
 </template>
