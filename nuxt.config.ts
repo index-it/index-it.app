@@ -1,6 +1,6 @@
 const title = "Index - The essential app for any kind of list";
 const description =
-    "Index is the perfect app for any kind of list. It's minimal and yet complete, made to simplify your life.";
+    "Note down what matters to you. Get Index, the app for any kind of list.";
 
 export default defineNuxtConfig({
   app: {
