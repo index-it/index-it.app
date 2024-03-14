@@ -9,7 +9,7 @@
       <span class="text-[4.8rem] leading-none md:text-8xl mb-10 font-bold text-center px-8 md:px-16">
         Note down what matters to you.
       </span>
-      <span class="italic text-xl md:text-2xl">Get Index, the app for any kind of list.</span>
+      <span class="italic text-xl md:text-2xl px-8 text-center">Get Index, the app for any kind of list.</span>
       <NuxtLink
         to="/playstore"
         role="button"
