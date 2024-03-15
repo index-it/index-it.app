@@ -12,12 +12,12 @@ export const redirects: Array<Redirect> = [
     {
         id: 'support',
         name: 'support',
-        url: 'https://community.index-it.app'
+        url: 'https://community.index-it.app/c/support/5'
     },
     {
         id: 'roadmap',
         name: 'Roadmap',
-        url: 'https://roadmap.index-it.app'
+        url: 'https://community.index-it.app/c/feature-request/6'
     },
     {
         id: 'donate',
