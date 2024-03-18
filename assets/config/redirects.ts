@@ -2,7 +2,7 @@ export const redirects: Array<Redirect> = [
     {
         id: 'playstore',
         name: 'PlayStore',
-        url: 'https://playstore.com'
+        url: 'https://play.google.com/store/apps/details?id=app.index_it.android'
     },
     {
         id: 'community',
