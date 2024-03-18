@@ -17,7 +17,7 @@ export const redirects: Array<Redirect> = [
     {
         id: 'roadmap',
         name: 'Roadmap',
-        url: 'https://community.index-it.app/c/feature-request/6'
+        url: 'https://community.index-it.app/t/roadmap-whats-planned/13'
     },
     {
         id: 'donate',
