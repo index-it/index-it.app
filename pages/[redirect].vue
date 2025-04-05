@@ -31,8 +31,12 @@ onMounted(() => {
         if (redirect) {
             setTimeout(() => {
                 try {
+                  if (redirect.url.startsWith("mailto:")) {
+                    window.location.href = redirect.url
+                  } else {
                     location.replace(redirect.url);
-                    // eslint-disable-next-line no-empty
+                  }
+                  // eslint-disable-next-line no-empty
                 } catch (error) {}
             }, 1000);
         }

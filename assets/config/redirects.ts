@@ -12,7 +12,7 @@ export const redirects: Array<Redirect> = [
     {
         id: 'support',
         name: 'support',
-        url: 'https://community.index-it.app/c/support/5'
+        url: 'mailto:support@index-it.app'
     },
     {
         id: 'contact',
