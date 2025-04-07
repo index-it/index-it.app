@@ -9,7 +9,7 @@
 
       <div class="flex gap-4 md:gap-8 flex-col md:flex-row items-center md:items-start mt-10">
         <a
-          href="https://apps.apple.com/app/idxxxxxxxx"
+          href="https://apps.apple.com/us/app/index-lists-tasks/id6743499824"
           target="_blank"
         >
           <img
@@ -19,7 +19,7 @@
           >
         </a>
         <a
-          href=""
+          href="https://play.google.com/store/apps/details?id=app.index_it.android&hl=en"
           target="_blank"
         >
           <img
