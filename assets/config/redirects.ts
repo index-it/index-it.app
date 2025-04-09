@@ -5,6 +5,11 @@ export const redirects: Array<Redirect> = [
         url: 'https://play.google.com/store/apps/details?id=app.index_it.android'
     },
     {
+      id: 'appstore',
+      name: 'Appstore',
+      url: 'https://apps.apple.com/us/app/index-lists-tasks/id6743499824'
+    },
+    {
         id: 'community',
         name: 'Community',
         url: 'https://community.index-it.app'
