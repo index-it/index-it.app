@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center h-full text-2xl">
+  <div class="flex items-center justify-center h-full text-xl md:text-2xl">
     redirecting to {{redirect.name}} <span class="loading-dots" />
   </div>
 </template>
