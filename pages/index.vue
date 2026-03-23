@@ -46,7 +46,7 @@
       <!--      </p>-->
     </div>
 
-    <div class="flex items-center space-x-32">
+    <div class="flex items-center justify-between md:justify-normal w-full md:w-auto md:space-x-32">
       <div class="flex flex-col">
         <nuxt-link to="contact">
           shoot me an email
@@ -58,7 +58,7 @@
           msg on discord
         </nuxt-link>
       </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col text-end md:text-start">
         <nuxt-link to="/privacy">
           privacy policy
         </nuxt-link>
