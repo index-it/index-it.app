@@ -1,45 +1,49 @@
 <template>
-  <div
-    class="min-h-screen flex grow flex-col items-center justify-center text-center"
-  >
-    <span
-      class="text-3xl leading-none md:text-6xl font-bold animate-pulse"
-    >{{ pageContent }}</span>
+  <div class="flex items-center justify-center h-full text-2xl">
+    redirecting to {{redirect.name}} <span class="loading-dots" />
   </div>
 </template>
 
 <script setup>
-import { redirects } from "../assets/config/redirects";
-import { nextTick } from "vue";
+import { redirects } from "assets/config/redirects";
 
 const route = useRoute();
-const redirect = redirects.find(
-    (redirect) => redirect.id === route.params.redirect.toLowerCase()
-);
-const pageContent = redirect
-    ? `Redirecting to ${redirect.name}`
-    : "404 - Not found";
-
-useHead({
-    title: pageContent,
-    meta: [{ name: "title", content: pageContent }],
-});
+const redirect = redirects.find(r => r.id === route.params.redirect.toLowerCase())
+if (!redirect) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'uh oh, nothing here :/',
+  })
+}
 
 onMounted(() => {
-    // Guarantees the DOM tree to be fully built
-    nextTick(() => {
-        if (redirect) {
-            setTimeout(() => {
-                try {
-                  if (redirect.url.startsWith("mailto:")) {
-                    window.location.href = redirect.url
-                  } else {
-                    location.replace(redirect.url);
-                  }
-                  // eslint-disable-next-line no-empty
-                } catch (error) {}
-            }, 1000);
+  // guarantees DOM tree to be fully built
+  nextTick(() => {
+    if (redirect) {
+      setTimeout(() => {
+        if (redirect.url.startsWith("mailto:")) {
+          window.location.href = redirect.url;
+        } else {
+          location.replace(redirect.url)
         }
-    });
-});
+      }, 1000);
+    }
+  })
+})
 </script>
+
+<style>
+/* loading dots indicator */
+.loading-dots::after {
+  content: '';
+  animation: dots 1.5s infinite;
+  color: black; /* pink dots */
+}
+
+@keyframes dots {
+  0%, 20% { content: ''; }
+  40% { content: '.'; }
+  60% { content: '..'; }
+  80%, 100% { content: '...'; }
+}
+</style>

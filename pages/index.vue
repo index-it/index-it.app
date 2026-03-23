@@ -1,40 +1,71 @@
+<script setup lang="ts">
+</script>
 <template>
-  <div class="flex flex-col items-center">
-    <div class="flex min-h-screen flex-col items-center justify-center">
-      <span class="text-[3.8rem] leading-none md:text-8xl mb-8 font-bold text-center px-8 md:px-16">
-        be intentional.
-      </span>
+  <div class="flex flex-col items-center justify-center h-full w-full">
+<!--    <img-->
+<!--      src="/logo.png"-->
+<!--      alt="index beautiful cute logo"-->
+<!--      class="aspect-square h-16 mb-4"-->
+<!--    >-->
+    <p class="text-xl text-center">
+      Index - lists & tasks
+    </p>
 
-      <span class="text-xl md:text-3xl px-8 text-center font-semibold text-gray-200">index ~ the perfect app for any kind of list</span>
+    <p class="text-center mt-2">
+      built for simplicity and intentionality
+    </p>
 
-      <div class="flex gap-4 md:gap-8 flex-col md:flex-row items-center md:items-start mt-10">
-        <a
-          href="https://apps.apple.com/us/app/index-lists-tasks/id6743499824"
+    <!--    <p>Index</p>-->
+
+    <div class="flex flex-col items-start my-16">
+      <p class="mb-4 font-bold">
+        currently available on:
+      </p>
+      <p>
+        iPhone: <nuxt-link
+          to="appstore"
           target="_blank"
         >
-          <img
-            src="~/assets/images/app-store-badge.png"
-            alt="Download on the App Store"
-            class="h-16 hover:opacity-80"
-          >
-        </a>
-        <a
-          href="https://play.google.com/store/apps/details?id=app.index_it.android&hl=en"
+          download
+        </nuxt-link>
+      </p>
+      <!--      <a-->
+      <!--        href="https://apps.apple.com/us/app/index-lists-tasks/id6743499824"-->
+      <!--        target="_blank"-->
+      <!--        class="no-hover"-->
+      <!--      >-->
+      <!--        <img-->
+      <!--          src="~/assets/images/app-store-badge.png"-->
+      <!--          alt="Download on the App Store"-->
+      <!--          class="h-12 hover:opacity-80"-->
+      <!--        >-->
+      <!--      </a>-->
+
+      <!--      <p class="opacity-40 text-sm">-->
+      <!--        coming to more platform-->
+      <!--      </p>-->
+    </div>
+
+    <div class="flex items-center space-x-32">
+      <div class="flex flex-col">
+        <nuxt-link to="contact">
+          shoot me an email
+        </nuxt-link>
+        <nuxt-link
+          to="discord"
           target="_blank"
         >
-          <img
-            alt="Get it on Google Play"
-            src="~/assets/images/google-play-store-badge.svg"
-            class="h-16 hover:opacity-90"
-          >
-        </a>
+          msg on discord
+        </nuxt-link>
+      </div>
+      <div class="flex flex-col">
+        <nuxt-link to="/privacy">
+          privacy policy
+        </nuxt-link>
+        <nuxt-link to="/terms">
+          terms of service
+        </nuxt-link>
       </div>
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-</script>
-<style scoped>
-
-</style>

@@ -1,6 +1,6 @@
-const title = "Index - The essential app for any kind of list";
+const title = "Index - lists & tasks";
 const description =
-    "Note down what matters to you. Get Index, the app for any kind of list.";
+    "a place for your thoughts, built for simplicity and intentionality.";
 
 export default defineNuxtConfig({
   app: {
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
                   content:
                       "todo list, to-do, list, task, to-do list, todo app, index, todolist",
               },
-              { name: "theme-color", content: "#FFFFFF" },
+              { name: "theme-color", content: "#88CCFA" },
               {
                   name: "author",
                   content:
@@ -51,7 +51,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
       public: {
-          apiBase: "https://api-beta.index-it.app",
+          apiBase: "https://api.index-it.app",
       },
   },
 

@@ -4,52 +4,37 @@
 
 @layer base {
     html {
-        font-family:
-        Helvetica Neue,
-        Helvetica,
-        Inter,
-        GoNotoCurrent,
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        Segoe UI,
-        Roboto,
-        Helvetica Neue,
-        Arial,
-        Noto Sans,
-        sans-serif,
-        Apple Color Emoji,
-        Segoe UI Emoji,
-        Segoe UI Symbol,
-        Noto Color Emoji;
+        @apply font-mono;
     }
 
     html, body, #__nuxt { 
         @apply h-full;
     }
+
+    body {
+        @apply bg-background text-black;
+        @apply selection:bg-black selection:text-accent;
+
+        /* dark mode overrides */
+        /*@apply dark:bg-black dark:text-white;*/
+        /*@apply dark:selection:bg-black dark:selection:text-accent;*/
+    }
+
+    a, button {
+        @apply underline underline-offset-4 transition-all px-2 py-1;
+    }
+
+    a:not(.no-hover):hover, button:hover {
+        @apply no-underline bg-black text-accent;
+    }
 }
 
-body {
-    @apply accent-white;
-    @apply selection:bg-white selection:text-primary;
-    @apply text-white;
-}
-
-a {
-    @apply underline-offset-4 transition-all;
-}
-
-.button {
-    @apply bg-neutral-800 hover:bg-black text-white px-8 py-3 rounded-lg transition-all;
-}
-
-#gradient-canvas {
+#bg-image {
     position: fixed;
-    z-index: -100;
-    width:100%;
-    height:100%;
-    --gradient-color-1: #1e5336;
-    --gradient-color-2: #0b190f;
-    --gradient-color-3: #053219;
-    --gradient-color-4: #1a412e;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/axiom-pattern.png');
+    z-index: -1;
 }
