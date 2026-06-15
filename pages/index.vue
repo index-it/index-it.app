@@ -71,6 +71,9 @@
         <nuxt-link to="/terms">
           terms of service
         </nuxt-link>
+        <nuxt-link to="/whoops">
+          ‎
+        </nuxt-link>
       </div>
     </div>
   </div>
