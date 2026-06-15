@@ -29,6 +29,11 @@ export const redirects: Array<Redirect> = [
         name: 'discord',
         url: 'https://discord.gg/ByXJ9CepKt'
     },
+    {
+        id: 'github',
+        name: 'github',
+        url: 'https://github.com/index-it'
+    },
     // {
     //     id: 'roadmap',
     //     name: 'Roadmap',
