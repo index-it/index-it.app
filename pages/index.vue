@@ -57,6 +57,12 @@
         >
           msg on discord
         </nuxt-link>
+        <nuxt-link
+          to="github"
+          target="_blank"
+        >
+          open source
+        </nuxt-link>
       </div>
       <div class="flex flex-col text-end md:text-start">
         <nuxt-link to="/privacy">
